@@ -1,0 +1,13 @@
+int a,b;
+{
+	a := 1;
+	read (b);
+	while(b>0)
+	{
+		a := a*b;
+		b := b-1;
+	};
+	
+	print (a);
+}
+

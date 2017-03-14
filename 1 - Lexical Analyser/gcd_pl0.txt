@@ -1,0 +1,22 @@
+int a,b,c;
+	proc gcd
+	{
+		if (b > a) then {
+			c := a;
+			a := b;
+			b := c;
+		} else {
+			c := 5;
+		};
+		a := a - b;
+		if (b = 0) then {
+			print (a);
+		} else {
+			call (gcd);
+		};
+	};
+{
+	read (a);
+	read (b);
+	call (gcd);
+}

@@ -1,0 +1,20 @@
+int a,b;
+	proc fact
+	{
+		if (b = 0)
+		then
+		{
+			print (a);
+		}
+		else
+		{
+			a := a*(b);
+			b := b-1;
+			call fact;
+		};
+	};
+{
+	a := 1;
+	read (b);
+	call fact;
+}
