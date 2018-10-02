@@ -1,0 +1,17 @@
+[Program
+	[ Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [Ident[a], VarDef1 [EOS]] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[a] , VarDef1 [ EOS ] ] ]
+				]
+			, ProcDecls
+				[ EPSILON ]
+			]
+		, CommandSeq
+			[ LB , Command [ EPSILON ] , RB ]
+		]
+	]
+]

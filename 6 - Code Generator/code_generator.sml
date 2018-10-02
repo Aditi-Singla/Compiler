@@ -564,6 +564,6 @@ fun printS ([],file) = printStringtoFile("",file)
 printS(codeGenerator(stringtoASTTree(toTokenList(readFromFiletoCharList(hd list_arg),[],"")),toTupleList(readFromFiletoLineList(hd (tl list_arg)),[]),"global",getscopesymbols(toTupleList(readFromFiletoLineList(hd (tl list_arg)),[]),"global",[]),[],0),hd (tl (tl list_arg)));
 val out_code = hd (tl (tl list_arg));
 val out_value = hd (rev list_arg);
-use "vmcs5140277.sml";
+use "stack_machine.sml";
 
 OS.Process.exit(OS.Process.success);

@@ -1,0 +1,156 @@
+[Program
+	[ Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Ident[a] , VarDef1 [ COMMA , VarDef [ Ident[b] , VarDef1 [ EOS ] ] ] ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[c] , VarDef1 [ COMMA , VarDef [ Ident[d] , VarDef1 [ EOS ] ] ] ] ]
+				]
+			, ProcDecls
+				[ PROC , Ident[procedure] , Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Ident[ab] , VarDef1 [ COMMA , VarDef [ Ident[cdef] , VarDef1 [ EOS ] ] ] ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[ac] , VarDef1 [ COMMA , VarDef [ Ident[bdef] , VarDef1 [ EOS ] ] ] ] ]
+				]
+			, ProcDecls
+				[ PROC , Ident[procedure1] , Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Ident[abcdef] , VarDef1 [ EOS ] ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[abcdefg] , VarDef1 [ EOS ] ] ]
+				]
+			, ProcDecls
+				[ EPSILON ]
+			]
+		, CommandSeq
+			[ LB , Command [ ConditionalCmd [ IF , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[abcdefg] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EQ , BoolG [ BoolH [ BoolI [ BoolJ [ BoolLiteral[tt] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , THEN , CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[abcdefg] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ BoolLiteral[ff] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ EPSILON ] ] , RB ]
+, ELSE , CommandSeq
+			[ LB , Command [ ConditionalCmd [ IF , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[abcdef] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ NE , BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[5] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , THEN , CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[abcdef] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[6] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ EPSILON ] ] , RB ]
+, ELSE , CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[abcdef] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[7] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ EPSILON ] ] , RB ]
+		]
+, EOS , ProcDecls
+				[ EPSILON ]
+			]
+			]
+		, CommandSeq
+			[ LB , Command [ PrintCmd [ PRINT , LP , Ident[cdef] , RP ] , EOS , Command [ EPSILON ] ] , RB ]
+		]
+, EOS , ProcDecls
+				[ EPSILON ]
+			]
+			]
+		, CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[a] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[b] ] ] , IntT1 [ EPSILON ] ] , IntE [ BINADD , IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ BINDIV , IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ BINMUL , IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] ] ] ] ] , IntE [ EPSILON ] ] ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ WhileCmd [ WHILE , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ NEG , BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ AND , BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , CommandSeq
+			[ LB , Command [ WhileCmd [ WHILE , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ OR , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ AND , BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ NEG , BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ AND , BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , CommandSeq
+			[ LB , Command [ CallCmd [ CALL , Ident[procedure] ] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ AssignmentCmd [ Ident[b] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[b] ] ] , IntT1 [ EPSILON ] ] , IntE [ BINSUB , IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[1] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ PrintCmd [ PRINT , LP , Ident[a] , RP ] , EOS , Command [ ReadCmd [ READ , LP , Ident[b] , RP ] , EOS , Command [ EPSILON ] ] ] ] ] ] , RB ]
+		]
+	]
+]
+[Program
+	[ Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Error ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[a] , VarDef1 [ EOS ] ] ]
+				]
+			, ProcDecls
+				[ EPSILON ]
+			]
+		, CommandSeq
+			[ LB , Command [ EPSILON ] , RB ]
+		]
+	]
+]
+[Program
+	[ Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Error ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[a] , VarDef1 [ EOS ] ] ]
+				]
+			, ProcDecls
+				[ EPSILON ]
+			]
+		, CommandSeq
+			[ LB , Command [ EPSILON ] , RB ]
+		]
+	]
+]
+[Program
+	[ Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Ident[a] , VarDef1 [ COMMA , VarDef [ Ident[b] , VarDef1 [ EOS ] ] ] ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[c] , VarDef1 [ COMMA , VarDef [ Ident[d] , VarDef1 [ EOS ] ] ] ] ]
+				]
+			, ProcDecls
+				[ PROC , Ident[procedure] , Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Ident[ab] , VarDef1 [ COMMA , VarDef [ Ident[cdef] , VarDef1 [ EOS ] ] ] ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[ac] , VarDef1 [ COMMA , VarDef [ Ident[bdef] , VarDef1 [ EOS ] ] ] ] ]
+				]
+			, ProcDecls
+				[ PROC , Ident[procedure1] , Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Ident[abcdef] , VarDef1 [ EOS ] ] ]
+				, BoolVarDecls
+					[ BOOL , VarDef [ Ident[abcdefg] , VarDef1 [ EOS ] ] ]
+				]
+			, ProcDecls
+				[ EPSILON ]
+			]
+		, CommandSeq
+			[ LB , Command [ ConditionalCmd [ IF , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[abcdefg] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EQ , BoolG [ BoolH [ BoolI [ BoolJ [ BoolLiteral[tt] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , THEN , CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[abcdefg] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ BoolLiteral[ff] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ EPSILON ] ] , RB ]
+, ELSE , CommandSeq
+			[ LB , Command [ ConditionalCmd [ IF , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[abcdef] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ NE , BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[5] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , THEN , CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[abcdef] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[6] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ EPSILON ] ] , RB ]
+, ELSE , CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[abcdef] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[7] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ EPSILON ] ] , RB ]
+		]
+, EOS , ProcDecls
+				[ EPSILON ]
+			]
+			]
+		, CommandSeq
+			[ LB , Command [ PrintCmd [ PRINT , LP , Ident[cdef] , RP ] , EOS , Command [ EPSILON ] ] , RB ]
+		]
+, EOS , ProcDecls
+				[ EPSILON ]
+			]
+			]
+		, CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[a] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[b] ] ] , IntT1 [ EPSILON ] ] , IntE [ BINADD , IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ BINDIV , IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ BINMUL , IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] ] ] ] ] , IntE [ EPSILON ] ] ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ WhileCmd [ WHILE , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ NEG , BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ AND , BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , CommandSeq
+			[ LB , Command [ WhileCmd [ WHILE , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ OR , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ AND , BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ NEG , BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[c] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ AND , BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[d] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , CommandSeq
+			[ LB , Command [ CallCmd [ CALL , Ident[procedure] ] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ EPSILON ] ] , RB ]
+] , EOS , Command [ AssignmentCmd [ Ident[b] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[b] ] ] , IntT1 [ EPSILON ] ] , IntE [ BINSUB , IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[1] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ PrintCmd [ PRINT , LP , Ident[a] , RP ] , EOS , Command [ ReadCmd [ READ , LP , Ident[b] , RP ] , EOS , Command [ EPSILON ] ] ] ] ] ] , RB ]
+		]
+	]
+]

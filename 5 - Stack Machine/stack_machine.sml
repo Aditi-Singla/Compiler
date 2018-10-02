@@ -1,6 +1,4 @@
-(*use "bi.sml";*)
-
-use "bics5140277.sml";
+use "bigint_ref.sml";
 open BigInt;
 
 val list_arg = CommandLine.arguments();

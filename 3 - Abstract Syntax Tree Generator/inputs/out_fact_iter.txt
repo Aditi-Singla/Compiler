@@ -1,0 +1,19 @@
+[Program
+	[ Block
+		[ DeclarationSeq
+			[ VarDecls
+				[ IntVarDecls
+					[ INT , VarDef [ Ident[a] , VarDef1 [ COMMA , VarDef [ Ident[b] , VarDef1 [ EOS ] ] ] ] ]
+				, BoolVarDecls
+					[ EPSILON ]
+				]
+			, ProcDecls
+				[ EPSILON ]
+			]
+		, CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[a] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[1] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ ReadCmd [ READ , LP , Ident[b] , RP ] , EOS , Command [ WhileCmd [ WHILE , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ LP , BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[b] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ GT , BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[0] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , RP ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] , CommandSeq
+			[ LB , Command [ AssignmentCmd [ Ident[a] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[a] ] ] , IntT1 [ BINMUL , IntT [ IntF [ IntF1 [ Ident[b] ] ] , IntT1 [ EPSILON ] ] ] ] , IntE [ EPSILON ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ AssignmentCmd [ Ident[b] , ASSIGN , Expression [ BoolExpression [ BoolF [ BoolG [ BoolH [ BoolI [ BoolJ [ IntExpression [ IntT [ IntF [ IntF1 [ Ident[b] ] ] , IntT1 [ EPSILON ] ] , IntE [ BINSUB , IntExpression [ IntT [ IntF [ IntF1 [ IntLiteral[1] ] ] , IntT1 [ EPSILON ] ] , IntE [ EPSILON ] ] ] ] ] ] , BoolH1 [ EPSILON ] ] , BoolG1 [ EPSILON ] ] , BoolF1 [ EPSILON ] ] , BoolE [ EPSILON ] ] ] ] , EOS , Command [ EPSILON ] ] ] , RB ]
+] , EOS , Command [ PrintCmd [ PRINT , LP , Ident[a] , RP ] , EOS , Command [ EPSILON ] ] ] ] ] , RB ]
+		]
+	]
+]

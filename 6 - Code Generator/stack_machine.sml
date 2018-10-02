@@ -1,6 +1,4 @@
-(*use "bi.sml";*)
-
-use "bics5140277.sml";
+use "bigint_ref.sml";
 open BigInt;
 
 val list_arg = CommandLine.arguments();
@@ -358,7 +356,7 @@ fun machine (output:string,ram:(string*string*string*string) list,pc:int,sym_tab
 
 fun execute (input,output,m) = machine(output,listoftuples(readfile(input),[]),0,[],m); 
 (*readfile("input.txt");*)
-execute(out_code,out_value,"0");
+execute(hd list_arg,hd (tl list_arg),"0");
 (*execute("input.txt","output.txt","10");*)
 
 OS.Process.exit(OS.Process.success);
